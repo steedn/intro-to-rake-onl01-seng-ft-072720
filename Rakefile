@@ -14,11 +14,11 @@ end
 
 namespace :db do
   desc 'migrate changes to your database'
-  task :migrate => :enviroment do
+  task :migrate => :environment do
     Student.create_table
   end
 
-  task :enviroment do
-    require_relative './config/enviroment'
+  task :environment do
+    require_relative './config/environment'
   end
 end
